@@ -110,8 +110,16 @@ p {
     justify-content: center;
     display: flex;
 }
+#yelp {
+    width: 25%;
+    height: 45vh;
+    margin: 20px 15px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 25px;
+}
 
-#map {
+#map{
     width: 25%;
     height: 45vh;
     margin: 20px 15px;
