@@ -24,9 +24,3 @@ $("#firstBtn").on("click", function () {
         console.log(response);
     })
 })
-
-
-
-
-// aJax();
-// getApi();
