@@ -4,9 +4,13 @@ const apiKey = "QUZUkG7TUxmpU7KluE2jyqZtI8PEZCZwXyyJWeZUrhk7LOhxoiDv1YaTYF9bNzVU
 const corsUrl = "https://cors-anywhere.herokuapp.com/"
 const token = "Bearer QUZUkG7TUxmpU7KluE2jyqZtI8PEZCZwXyyJWeZUrhk7LOhxoiDv1YaTYF9bNzVU808diTb1CPGXeZKVmar4QRlMMgKxNvg5l_NzkPq40EXG7VF4kNioPiPhZTZQYHYx"
 
-$("#firstBtn").on("click", function () {
+$(".searchBtn").on("click", function () {
     let query = $("#userInput").val()
     // If there is an empty value, return
+    var test = navigator.geolocation.getCurrentPosition() 
+    console.log(test)
+
+    // Passing a geolocation to a on click function jquery
     if (query === "") {
         return;
     }
