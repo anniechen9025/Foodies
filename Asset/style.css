@@ -6,38 +6,11 @@ body, html {
     place-items: center;
 }
 
-/* Navbar styles for buttons
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    padding-right: 50px;
-    font-size: 150%;
-}
-
-li {
-    float: right;
-}
-
-li a{
-    display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: lightgray;
-    color: white;
-} */
-
-/* Foodies GIF */
+/* Navbar */
 
 .foodies {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -59,10 +32,6 @@ li a:hover {
 
 /* Styles for search box */
 
-label {
-    font-size: 30px;
-}
-
 .box {
     display: flex;
 }
@@ -74,11 +43,13 @@ label {
     align-items: center;
     justify-content: center;
     margin-right: 12px;
+    margin-left: 75px;
     border-radius: 25px;
 }
 
 label {
-    font-family: "Hind", sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
     display: block;
     color: black;
     margin-bottom: 12px;
@@ -88,7 +59,7 @@ label {
 }
 
 input {
-    background-color: #e3edf7;
+    background-color: #ece8e5;
     padding: 16px 40px;
     border: none;
     display: block;
@@ -103,6 +74,7 @@ input {
 p {
     text-align: center;
     font-size: 120%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 3 boxes */
@@ -131,7 +103,7 @@ p {
     width: 50%;
     height: 45vh;
     margin: 0px 15px;
-    background-color: lightgray;
+    background-color: #ece8e5;
     border-radius: 25px;
 }
 
