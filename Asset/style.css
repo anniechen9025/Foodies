@@ -90,7 +90,16 @@ p {
     justify-content: center;
     display: flex;
 }
-#yelp {
+
+#yelp-1 {
+    width: 50%;
+    height: 45vh;
+    margin: 0px 15px;
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+#yelp-2 {
     width: 50%;
     height: 45vh;
     margin: 0px 15px;
@@ -105,4 +114,9 @@ p {
     margin: 20px 6px;
     display: flex;
     border-radius: 25px;
+}
+
+.list-text {
+    font-size: 18px;
+    line-height: 32px;
 }
