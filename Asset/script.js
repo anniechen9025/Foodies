@@ -54,6 +54,9 @@ $(".searchBtn").on("click", function () {
       // console.log(yelpImage)
 
       $("#yelp-2").attr("src", yelpImage)
+    
+      $("#boxes").removeClass("hide")
+      $("#hide-text").empty("")
     }
   })
 });
