@@ -38,6 +38,8 @@ $(".searchBtn").on("click", function () {
     })
 });
 
+
+
 navigator.geolocation.getCurrentPosition(successCallback,
     errorCallback,
     {maximumAge:600000});
