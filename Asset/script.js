@@ -37,7 +37,7 @@ $(".searchBtn").on("click", function () {
   }).then(function (response) {
     clearSearch();
 
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < 10; i++) {
       let yelpList = response.businesses[i]
       // console.log(yelpList);
 
