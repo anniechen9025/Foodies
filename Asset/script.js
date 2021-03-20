@@ -37,21 +37,32 @@ $(".searchBtn").on("click", function () {
   }).then(function (response) {
     clearSearch();
 
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < 10; i++) {
       let yelpList = response.businesses[i]
-      // console.log(yelpList);
+      console.log(yelpList);
 
       let yelpNumber = yelpList.display_phone;
-      // console.log(yelpNumber)
+      console.log(yelpNumber)
 
       let yelpName = yelpList.name;
       // console.log(yelpName)
 
-      let listBtn = $("<li>").text(yelpName + " Phone #: " + yelpNumber);
+      let linkTag = $("<a>").text(yelpName);
+      linkTag.attr("href", yelpList.url)
+      console.log(yelpList.url)
+
+      let listBtn = $("<li>").append(linkTag)
       $("#yelp-list").append(listBtn).addClass("list-text")
 
       let yelpImage = yelpList.image_url;
       // console.log(yelpImage)
+
+      // Variables that stores Yelps restaurant longitude and latitude
+      let yelpLat = yelpList.coordinates.latitude;
+      console.log(yelpLat)
+      
+      let yelpLng = yelpList.coordinates.longitude;
+      console.log(yelpLng)
 
       $("#yelp-2").attr("src", yelpImage)
     
