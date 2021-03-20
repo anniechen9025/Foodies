@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Search icon link -->
+    <script src="https://kit.fontawesome.com/14bd40c2df.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="Asset/style.css" />
 </head>
 
 <body>
 
-    <div id="nav">
+    <img src="foodies.gif" alt="foodies" class="foodies">
+
+    <!-- Navbar
+    <div id="navbar">
         <ul>
             <div id="emoji"> 
                 <input type="text" name="search" placeholder="Search...">
@@ -22,39 +28,49 @@
             <li><a href="#">Button</a></li>
             <li><a href="#">Button</a></li>
         </ul>
-    </div>
+    </div> -->
 
+    <!-- Kawaii egg image -->
     <div class="container">
         <img src="egg.png" alt="egg" class="egg">
-        <div class="overlay">
-            <div class="text">Hungry?</div>
+    </div>
+
+    <!-- Style for search box -->
+    <div class="searchbox">
+        <div class="innerbox">
+            <label>Search for your favourite food</label>
+            <div class="box">
+                <button class="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="input">
+                    <input placeholder="Pizza? Sushi? Ramen?" id="userInput"/>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Information about the Foodies page -->
     <div id="info">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum atque laboriosam perferendis? <br>
             Accusantium, dolorum rerum adipisci expedita voluptas esse, fugit fugiat ab amet aliquam quae! Perspiciatis
             fugiat et exercitationem numquam.</p>
     </div>
 
+    <!-- Styles for 2 boxes (Yelp)-->
     <div id="boxes">
-        <h1>Map, Yelp, something something</h1>
         <div id="card">
-            <div id="map">
-                <h2>Something here</h2>
-            </div>
-            <div id="map">
-                <h2>Something here</h2>
-            </div>
-            <div id="map">
-                <h2>Something here</h2>
-            </div>
+            <div id="yelp"></div>
+            <div id="yelp"></div>
         </div>
+
+        <!-- Google Map -->
+        <div id="map"></div>
     </div>
-
-
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeWrxgOM61l2hJVTiqUpKdmf2pw_E_qa4&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="Asset/script.js"></script>
+    <script src="./Asset/script.js"></script>
 </body>
 
 </html>
