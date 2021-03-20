@@ -67,7 +67,7 @@ label {
     display: flex;
 }
 
-.icon {
+.searchBtn {
     min-width: 46px;
     min-height: 46px;
     display: flex;
