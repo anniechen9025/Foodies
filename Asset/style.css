@@ -1,7 +1,7 @@
 /* Center all items in body */
 body, html {
     display: grid;
-    height: 100%;
+    height: 90%;
     grid-template: 1fr/100%;
     place-items: center;
 }
@@ -27,7 +27,7 @@ body, html {
     display: block;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 /* Styles for search box */
@@ -37,22 +37,22 @@ body, html {
 }
 
 .searchBtn {
-    min-width: 46px;
-    min-height: 46px;
+    min-width: 9%;
+    min-height: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 12px;
-    margin-left: 75px;
+    margin-right: 2%;
+    margin-left: 15%;
     border-radius: 25px;
 }
 
 label {
     font-family: 'Indie Flower', cursive;
-    font-size: 40px;
+    font-size: 260%;
     display: block;
     color: black;
-    margin-bottom: 12px;
+    margin-bottom: 2%;
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,6 +68,7 @@ input {
     -webkit-appearance: none;
     transition: all 240ms ease-out;
     width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Information about the Foodies page */
@@ -92,7 +93,7 @@ p {
 }
 
 #yelp-1 {
-    width: 50%;
+    width: 100%;
     height: 45vh;
     margin: 0px 15px;
     background-color: #ece8e5;
@@ -100,11 +101,18 @@ p {
 }
 
 #yelp-2 {
-    width: 50%;
+    width: 100%;
     height: 45vh;
     margin: 0px 15px;
     background-color: #ece8e5;
     border-radius: 25px;
+}
+
+/* List of resturants from Yelp */
+.list-text {
+    font-size: 110%;
+    line-height: 32px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 /* GOOGLE MAP */
@@ -116,11 +124,124 @@ p {
     border-radius: 25px;
 }
 
-.list-text {
-    font-size: 18px;
-    line-height: 32px;
-}
-
+/* Hides 3 boxes */
 .hide {
     display: none;
+}
+
+
+/* Media query breakpoints */
+
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (max-width: 769px) {
+   
+    p {
+        font-size: 130%;
+    }
+
+    #card {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 553px) {
+    
+    body, html {
+        height: 80%;
+    }
+
+    p {
+        font-size: 110%;
+    }
+    
+    label {
+        font-size: 220%;
+    }
+
+    .searchBtn {
+        min-width: 10%;
+    }
+
+    .egg {
+        width: 110%;
+        margin-bottom: 2%;
+    }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media screen and (max-width: 491px) {
+
+    label {
+        font-size: 210%;
+    }
+
+    .searchBtn {
+        min-width: 11%;
+    }
+}
+
+@media screen and (max-width: 449px) {
+
+    body, html {
+        height: 85%;
+    }
+    
+    .foodies {
+        width: 110%;
+    }
+
+    label {
+        font-size: 190%;
+    }
+
+    .searchBtn {
+        min-width: 12%;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    
+    .foodies {
+        width: 130%;
+        margin-right: 5%;
+    }
+
+    .egg {
+        width: 140%;
+        margin-bottom: 2%;
+    }
+
+    label {
+        font-size: 170%;
+        margin-bottom: 2%;
+    }
+
+    .searchBtn {
+        min-width: 13%;
+        min-height: 4%;
+        margin-right: 2%;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+/* 320px — 480px: Mobile devices */
+@media screen and (max-width: 320px) {
+
+    input {
+        width: 70%;
+    }
+
+    label {
+        font-size: 140%;
+    }
+
+    .searchBtn {
+        min-width: 16%;
+    }
+
 }
