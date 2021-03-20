@@ -120,3 +120,7 @@ p {
     font-size: 18px;
     line-height: 32px;
 }
+
+.hide {
+    display: none;
+}
