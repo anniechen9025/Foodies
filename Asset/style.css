@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+}
+
+input[type=text] {
+    width: 180px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 150%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    padding-right: 50px;
+    font-size: 150%;
+    background-color: rgb(168, 160, 160);
+    border-radius: 25px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding:30px 16px 20px;
+    text-decoration: none;
+    position:relative;
+    border-style: ridge;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    margin-inline:4px;
+    
+}
+
+li a:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+#emoji {
+    float: left;
+    padding: 10px 50px;
+    font-size: 80px;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+  
+.egg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: black;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+p {
+    text-align: center;
+    font-size: 120%;
+}
+
+#boxes {
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    justify-content: center;
+}
+
+#card {
+    width: 100%;
+    height: 55vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+#map {
+    width: 25%;
+    height: 45vh;
+    margin: 20px 15px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 25px;
+}
