@@ -73,7 +73,7 @@ input {
 /* Information about the Foodies page */
 p {
     text-align: center;
-    font-size: 120%;
+    font-size: 150%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -95,7 +95,7 @@ p {
     width: 50%;
     height: 45vh;
     margin: 0px 15px;
-    background-color: lightgray;
+    background-color: #ece8e5;
     border-radius: 25px;
 }
 
@@ -119,4 +119,8 @@ p {
 .list-text {
     font-size: 18px;
     line-height: 32px;
+}
+
+.hide {
+    display: none;
 }
