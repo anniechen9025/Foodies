@@ -19,10 +19,8 @@ function searchbtn() {
     }
 
     let lngData = map.center.lng();
-    // console.log(lngData)
 
     let latData = map.center.lat();
-    // console.log(latData);
 
     // userInput is taking the users input and using it as a parameter
     let yelpApi = `https://api.yelp.com/v3/businesses/search?term=${userInput}&latitude=${latData}&longitude=${lngData}`;
@@ -96,8 +94,9 @@ function searchbtn() {
 
 function clearSearch() {
   $("#yelp-list").empty("")
-}
+};
 
+//Geolocation API 
 navigator.geolocation.getCurrentPosition(successCallback,
   errorCallback,
   { maximumAge: 600000 });
@@ -111,6 +110,7 @@ function errorCallback(error) {
   console.log(error);
 };
 
+//Google Map API
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
